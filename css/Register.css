@@ -2,7 +2,9 @@
     font-family: "Lucida Sans", sans-serif;
 }
 
-header {
+.flex-header {
+    display: flex;
+    flex-direction: column;
     margin: 50px;
     color: #2F4C8C;
 }
