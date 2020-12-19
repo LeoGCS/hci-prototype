@@ -29,6 +29,16 @@
     color: white;
 }
 
+.flex-container-column > characteristics {
+    background-color: #2F4C8C;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    color: white;
+}
+
 .flex-container > button {
     background-color: #2F4C8C;
     border: none;
@@ -42,7 +52,7 @@
     cursor: pointer;
 }
 
-.flex-container-column > beispiele {
+.flex-container-column > examples {
     width: 500px;
     height: 100px;
     text-align: center;
