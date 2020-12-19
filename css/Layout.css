@@ -1,0 +1,19 @@
+* {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+.flex-container > div {
+    background-color: #2F4C8C;
+    margin: 10px;
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+    height: 100px;
+    width: 200px;
+}
