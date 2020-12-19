@@ -1,5 +1,6 @@
 * {
     font-family: "Lucida Sans", sans-serif;
+    background-color: #f1f1f1;
 }
 
 .flex-container {
@@ -16,4 +17,24 @@
     font-size: 30px;
     height: 100px;
     width: 200px;
+}
+
+.flex-container > button {
+    background-color: #2F4C8C;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.input {
+    width: 500px;
+    height: 100px;
+    text-align: center;
+
 }
