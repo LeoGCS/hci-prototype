@@ -1,0 +1,142 @@
+Index: html/SchwarzesBrett.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\n<html>\n<head>\n    <link rel=\"stylesheet\" href=\"../css/Layout.css\">\n</head>\n<body>\n\n<div class=\"flex-container\">\n    <div>StuGFILogo</div>\n    <div>Schwarzes Brett</div>\n    <div>Gruppen</div>\n    <div>Kalender</div>\n    <div>Messenger</div>\n    <div>Profil</div>\n</div>\n\n</body>\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/html/SchwarzesBrett.html b/html/SchwarzesBrett.html
+--- a/html/SchwarzesBrett.html	(revision f27894b15d385d89aa4f4adb9b0a31b8de4bfb6f)
++++ b/html/SchwarzesBrett.html	(date 1608403399762)
+@@ -14,5 +14,12 @@
+     <div>Profil</div>
+ </div>
+ 
++<!-- Die beiden Buttons sollen übereineander stehen. -->
++<!-- Klick auf Anzeige suchen/erstellen: Neue HTML Seite öffnet sich -->
++<div class="flex-container">
++    <button>Anzeige suchen</button>
++    <button>Anzeige erstellen</button>
++</div>
++
+ </body>
+ </html>
+\ No newline at end of file
+Index: css/Layout.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>* {\n    font-family: \"Lucida Sans\", sans-serif;\n}\n\n.flex-container {\n    display: flex;\n    justify-content: center;\n    background-color: #f1f1f1;\n}\n\n.flex-container > div {\n    background-color: #2F4C8C;\n    margin: 10px;\n    padding: 20px;\n    color: white;\n    font-size: 30px;\n    height: 100px;\n    width: 200px;\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/css/Layout.css b/css/Layout.css
+--- a/css/Layout.css	(revision f27894b15d385d89aa4f4adb9b0a31b8de4bfb6f)
++++ b/css/Layout.css	(date 1608403767021)
+@@ -1,5 +1,6 @@
+ * {
+     font-family: "Lucida Sans", sans-serif;
++    background-color: #f1f1f1;
+ }
+ 
+ .flex-container {
+@@ -16,4 +17,24 @@
+     font-size: 30px;
+     height: 100px;
+     width: 200px;
++}
++
++.flex-container > button {
++    background-color: #2F4C8C;
++    border: none;
++    color: white;
++    padding: 15px 32px;
++    text-align: center;
++    text-decoration: none;
++    display: inline-block;
++    font-size: 16px;
++    margin: 4px 2px;
++    cursor: pointer;
++}
++
++.input {
++    width: 500px;
++    height: 100px;
++    text-align: center;
++
+ }
+\ No newline at end of file
+Index: html/SchwarzesBrett_Suchen.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/html/SchwarzesBrett_Suchen.html b/html/SchwarzesBrett_Suchen.html
+new file mode 100644
+--- /dev/null	(date 1608404078326)
++++ b/html/SchwarzesBrett_Suchen.html	(date 1608404078326)
+@@ -0,0 +1,26 @@
++<!DOCTYPE html>
++<html>
++<head>
++    <link rel="stylesheet" href="../css/Layout.css">
++</head>
++<body>
++
++<div class="flex-container">
++    <div>StuGFILogo</div>
++    <div>Schwarzes Brett</div>
++    <div>Gruppen</div>
++    <div>Kalender</div>
++    <div>Messenger</div>
++    <div>Profil</div>
++</div>
++
++<!-- Write your comments here -->
++<div class="flex-container">
++    <button>Anzeige suchen</button><br><br>
++    <label>Suche:</label>
++    <
++
++</div>
++
++</body>
++</html>
+\ No newline at end of file
+Index: html/SchwarzesBrett_Erstellen.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/html/SchwarzesBrett_Erstellen.html b/html/SchwarzesBrett_Erstellen.html
+new file mode 100644
+--- /dev/null	(date 1608403561933)
++++ b/html/SchwarzesBrett_Erstellen.html	(date 1608403561933)
+@@ -0,0 +1,27 @@
++<!DOCTYPE html>
++<html>
++<head>
++    <link rel="stylesheet" href="../css/Layout.css">
++</head>
++<body>
++
++
++
++<div class="flex-container">
++    <!-- Ein Logo statt des Namens statt StuGFILogo, sonst sieht es aus wie alle anderen Button. -->
++    <div>StuGFILogo</div>
++    <div>Schwarzes Brett</div>
++    <div>Gruppen</div>
++    <div>Kalender</div>
++    <div>Messenger</div>
++    <div>Profil</div>
++</div>
++
++<!-- Write your comments here -->
++<div class="flex-container">
++    <button>Anzeige erstellen</button>
++
++</div>
++
++</body>
++</html>
+\ No newline at end of file
