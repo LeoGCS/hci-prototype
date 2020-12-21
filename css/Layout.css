@@ -59,6 +59,22 @@
     background-color: aqua;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover {
+    color:  lightblue;
+    text-decoration:    none;
+    cursor: pointer;
+}
+
+a.active {
+    color:  lightblue;
+}
+
 #Filter {
     padding: 10px;
     border-style: solid;
