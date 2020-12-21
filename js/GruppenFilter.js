@@ -21,19 +21,19 @@ var anzeigen = [
         maxAnzahl: "3",
     }
 ]
-var filterModule = document.getElementById("module") ;
 
-var filterAnzahl = document.getElementById("maxAnzahl") ;
+//var filterModule = document.getElementById("module") ;
 
-var filter = [filterModule, filterAnzahl] ;
+//var filterAnzahl = document.getElementById("maxAnzahl") ;
 
-var result = anzeigen.filter(function (ele) {
-    return ((ele["name"] == document.getElementById(name) || ele["name"] == null) &&
-        ele["module"] == filterModule &&
-        ele["maxAnzahl"] >= filterAnzahl)
-})
 
-console.log(result)
+function filter(filterAnzahl, filterModule ) {
+    var result = anzeigen.filter(function (ele) {
+        return ((ele["name"] == document.getElementById(name) || ele["name"] == null) &&
+            ele["module"] == filterModule &&
+            ele["maxAnzahl"] >= filterAnzahl)
+        console.log(result)}
+}
 
 
 
