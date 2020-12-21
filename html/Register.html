@@ -6,23 +6,33 @@
     <link rel="stylesheet" href="../css/Register.css">
 </head>
 <body>
+<body style="background-color: #f1f1f1">
 <header class="flex-header">
-    <h1>StuGFi</h1>
-    <p>Die Hochmotivierten</p>
+    <div style="background-color: #f1f1f1">
+        <img src="../ressources/StuGFi.PNG" width="200px"/>
+    </div>
 </header>
 
 
-<form class="flex-container">
+<form action="Gruppen.html" class="flex-container">
     <p id="Thema">Registrieren</p>
-    <label for="name">Benutzername:</label><br>
-    <input type="text" id="name"><br>
-    <label for="psw">Passwort:</label><br>
-    <input type="text" id="psw"><br>
-    <label for="pswRepeat">Passwort wiederholen:</label><br>
-    <input type="text" id="pswRepeat"><br>
-    <button>Bestätigen</button><br>
-    <button>Schon registriert?</button>
-</form>
+    <hr>
+    <label for="email">Email:</label>
+    <input type="text" placeholder="Email eingeben" name="email" id="email" required><br>
 
+    <label for="uname">Benutzername:</label><br>
+    <input type="text" placeholder="Benutzername eingeben" name="uname" required><br>
+
+    <label for="psw">Passwort:</label><br>
+    <input type="password" placeholder="Passwort eingeben" name="psw" required><br>
+
+    <label for="psw-repeat">Passwort wiederholen:</label><br>
+    <input type="password" placeholder="Passwort wiederholen" name="psw-repeat" id="psw-repeat" required><br>
+    <hr>
+    <button type="submit">Bestätigen</button><br>
+</form>
+<form action="Login.html" class="flex-container">
+    <button>Schon Registriert?</button>
+</form>
 </body>
 </html>
