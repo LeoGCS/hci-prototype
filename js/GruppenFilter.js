@@ -1,23 +1,23 @@
 
 var anzeigen = [
     {
-        name: "",
-        module: "",
-        maxAnzahl: "",
+        name: "Die Hochmotivierten",
+        module: "Mensch-Computer-Interaktion",
+        maxAnzahl: "5",
     },
     {
-        name: "",
-        module: "",
-        maxAnzahl: "",
+        name: "Copy Cats",
+        module: "Analysis A",
+        maxAnzahl: "4",
     },
     {
-        name: "",
-        module: "",
-        maxAnzahl: "",
+        name: "FizzBuzz",
+        module: "Analysis B",
+        maxAnzahl: "6",
     },
     {
-        name: "",
-        module: "",
-        maxAnzahl: "",
+        name: "Low effort",
+        module: "Datenstrukturen und Algorithmen",
+        maxAnzahl: "3",
     }
 ]
