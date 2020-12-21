@@ -25,15 +25,25 @@ var anzeigen = [
 //var filterModule = document.getElementById("module") ;
 
 //var filterAnzahl = document.getElementById("maxAnzahl") ;
+var result = null;
 
-
-function filter(filterAnzahl, filterModule ) {
-    var result = anzeigen.filter(function (ele) {
-        return ((ele["name"] == document.getElementById(name) || ele["name"] == null) &&
-            ele["module"] == filterModule &&
-            ele["maxAnzahl"] >= filterAnzahl)
-        console.log(result)}
+function filter(filterAnzahl, filterModule, filterName ) {
+    console.log(filterName)
+    console.log(filterAnzahl)
+    console.log(filterModule)
+    result = anzeigen.filter(function (ele) {
+        if(filterName == ""){
+            return (ele.module == filterModule &&
+            ele.maxAnzahl <= filterAnzahl)
+        }else{
+            return (ele.name == filterName &&
+            ele.module == filterModule &&
+            ele.maxAnzahl <= filterAnzahl)
+        }
+    })
+    console.log(result)
 }
+
 
 
 
