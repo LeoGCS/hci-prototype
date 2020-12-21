@@ -8,7 +8,9 @@
 <body>
 
 <div class="flex-container">
-    <div>StuGFILogo</div>
+    <div style="background-color: #f1f1f1">
+        <img src="../ressources/StuGFi.PNG" width="200px"/>
+    </div>
     <div>Schwarzes Brett</div>
     <div>Gruppen</div>
     <div>Kalender</div>
@@ -18,34 +20,39 @@
 
 <!-- Write your comments here -->
 <!-- Der ausgewählte Button soll eine andere Farbe haben -->
+<div class="flex-container">
+    <button>Anzeige suchen</button>
+    <button>Anzeige erstellen</button>
+</div>
 <div class="flex-container-column">
-    <div class="flex-container">
-        <button>Anzeige suchen</button>
-        <button>Anzeige erstellen</button>
-    </div>
-    <div><label for="name">Suche:</label><input type="text" id="name"><br><br></div>
-    <div>
-        <label for="name">Filter:</label><br>
-        <label for="name">Modul:</label>
-        <form action="/action_page.php">
-            <select>
-                <option>Analysis A</option>
-                <option>Analysis B</option>
-                <option>Datenstrukturen und Algorithmen</option>
-                <option>Mensch-Computer-Interaktion</option>
-            </select>
-            <br><br>
-        </form>
-        <label for="name">Maximale Personenanzahl:</label>
-        <form action="/action_page.php">
-            <select>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
-            <br><br>
-        </form>
+    <form>
+        <label for="name">Titel:</label>
+        <input type="text" id="name"><br><br>
+    </form>
+    <div style="">
+        <header style="font-weight: bold" for="name">Filter:</header><br>
+        <div id="Filter">
+            <label for="name">Modul:</label>
+            <form action="/action_page.php">
+                <select>
+                    <option>Analysis A</option>
+                    <option>Analysis B</option>
+                    <option>Datenstrukturen und Algorithmen</option>
+                    <option>Mensch-Computer-Interaktion</option>
+                </select>
+                <br><br>
+            </form>
+            <label for="name">Maximale Personenanzahl:</label>
+            <form action="/action_page.php">
+                <select>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <br><br>
+            </form>
+        </div>
     </div>
     <div><button>Suchen!</button><br><br></div>
 </div>

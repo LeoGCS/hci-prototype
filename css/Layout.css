@@ -58,3 +58,9 @@
     text-align: center;
     background-color: aqua;
 }
+
+#Filter {
+    padding: 10px;
+    border-style: solid;
+    border-width: 2px;
+}
