@@ -20,14 +20,22 @@
 
 <!-- Der ausgewählte Button soll eine andere Farbe haben -->
 <div class="flex-container">
-    <button>Chats Gruppen</button>
-    <button>Chats Privat</button>
+    <form action="Messenger_Privat.html" class="flex-container">
+        <button>Chats Privat</button>
+    </form>
+    <form action="Messenger_Gruppen.html" class="flex-container">
+        <button>Chats Gruppen</button>
+    </form>
 </div>
 
 <div class="flex-container-column">
 
-    <div><label for="name">Suche:</label><input type="text" id="name"><br><br></div>
-    <div><button>Suchen!</button><br><br></div>
+    <div>
+        <label style="font-size: 1.5rem" for="name">Name: </label>
+        <input type="text" id="name">
+        <button>Suchen!</button><br><br>
+    </div>
+
     <examples>Chat Privat: Pfirsich01</examples>
 </div>
 
