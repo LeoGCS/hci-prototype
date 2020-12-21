@@ -10,8 +10,9 @@
 
 
 <div class="flex-container">
-    <!-- Ein Logo statt des Namens statt StuGFILogo, sonst sieht es aus wie alle anderen Button. -->
-    <div>StuGFILogo</div>
+    <div style="background-color: #f1f1f1">
+        <img src="../ressources/StuGFi.PNG" width="200px"/>
+    </div>
     <div>Schwarzes Brett</div>
     <div>Gruppen</div>
     <div>Kalender</div>
@@ -19,22 +20,37 @@
     <div>Profil</div>
 </div>
 
+<div class="flex-container">
+    <button>Anzeige suchen</button>
+    <button>Anzeige erstellen</button>
+</div>
+
 <!-- Der ausgewählte Button soll eine andere Farbe haben -->
 <div class="flex-container-column">
-    <label>Titel:</label>
-    <input type="text" id="name"><br>
-    <label>Anzahl Mitglieder:</label><br>
-    <form action="/action_page.php">
+    <div>
+        <label>Titel:</label>
+        <input type="text" id="name"><br>
+    </div><br>
+    <div>
+        <label>Modul:</label>
+        <form action="/action_page.php">
         <select>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+            <option>Analysis A</option>
+            <option>Analysis B</option>
+            <option>Datenstrukturen und Algorithmen</option>
+            <option>Mensch-Computer-Interaktion</option>
         </select>
         <br><br>
-    </form>
-    <label>Beschreibung:</label><br>
-    <input type="text" id="pswRepeat"><br>
+        </form>
+    </div>
+    <div>
+        <label for="quantity">Anzahl:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="999"><br><br>
+    </div>
+    <div>
+        <label>Beschreibung:</label>
+        <input type="text" id="pswRepeat">
+    </div><br>
     <button>Erstellen!</button><br><br>
 </div>
 
