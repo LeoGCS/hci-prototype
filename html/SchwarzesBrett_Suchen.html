@@ -29,33 +29,28 @@
     </form>
 </div>
 <div class="flex-container-column">
-    <form>
-        <label for="name">Titel:</label>
-        <input type="text" id="name"><br><br>
-    </form>
-    <div style="">
-        <header style="font-weight: bold" for="name">Filter:</header><br>
-        <div id="Filter">
-            <label for="name">Modul:</label>
-            <form action="/action_page.php">
-                <select id="module">
+    <form action="SchwarzesBrett.html">
+        <div>
+            <label for="name">Titel:</label>
+            <input type="text" id="name" name="name"><br><br>
+        </div>
+        <div style="">
+            <header style="font-weight: bold" for="name">Filter:</header><br>
+            <div id="Filter">
+                <label for="name">Modul:</label>
+                <select id="module" name="module">
                     <option value="Analysis A">Analysis A</option>
                     <option value="Analysis B">Analysis B</option>
                     <option value="Datenstrukturen und Algorithmen">Datenstrukturen und Algorithmen</option>
                     <option value="Mensch-Computer-Interaktion">Mensch-Computer-Interaktion</option>
                 </select>
                 <br><br>
-            </form>
-            <label for="name">Maximale Personenanzahl:</label>
-            <input type="number" name="maxAnzahl" min="2" max="99">
+                <label for="name">Maximale Personenanzahl:</label>
+                <input type="number" name="maxAnzahl" min="2" max="99">
+            </div>
         </div>
-    </div>
-    <form action="SchwarzesBrett.html">
         <div>
-            <button onclick="filter(document.getElementById('maxAnzahl').value,
-                document.getElementById('module').value,
-                document.getElementById('name').value)">Suchen!
-            </button><br><br>
+            <button>Suchen!</button><br><br>
         </div>
     </form>
 

@@ -22,40 +22,24 @@ var anzeigen = [
     }
 ]
 
-var result = null;
-
-function filter(filterAnzahl, filterModule, filterName ) {
-    console.log(filterName)
-    console.log(filterAnzahl)
-    console.log(filterModule)
-    result = anzeigen.filter(function (ele) {
-        if(filterName == ""){
-            return (ele.module == filterModule &&
-            ele.maxAnzahl <= filterAnzahl)
-        }else{
-            return (ele.name == filterName &&
-            ele.module == filterModule &&
-            ele.maxAnzahl <= filterAnzahl)
-        }
-    })
-    console.log(result)
+function filter(filterAnzahl, filterModule, filterName) {
+    return anzeigen.filter(ele=>
+        ele.module == filterModule && (filterAnzahl == "" || ele.maxAnzahl <= filterAnzahl) && (filterName == "" || filterName == ele.name)
+    )
 }
 
 function print() {
-    var anzeige = null;
     var anzeigenBlock = '';
-    if (result == null) {
-        for (var i = 0; i < anzeigen.length; i++) {
-            anzeige = anzeigen[i];
-            anzeigenBlock += '<div>' + 'Name: ' + anzeige.name + '</div>';
-        }
-    } else {
-        for (var i = 0; i < result.length; i++) {
-            anzeige = result[i];
-            anzeigenBlock += '<div>' + 'Name: ' + anzeige.name + '</div>';
-        }
+    var url = new URL(window.location.href);
+    var result = anzeigen
+    if(url.search != ""){
+        result = filter(url.searchParams.get('maxAnzahl'),
+            url.searchParams.get('module'),
+            url.searchParams.get('name'));
     }
-    console.log(anzeigenBlock);
+    for (let anzeige of result) {
+        anzeigenBlock += '<div>' + 'Name: ' + anzeige.name + '<br/> Modul:' + anzeige.module + '<br/> Max. Mitglieder Anzahl' + anzeige.maxAnzahl + '</div>';
+    }
     document.getElementById('anzeigen').innerHTML = anzeigenBlock;
 }
 
