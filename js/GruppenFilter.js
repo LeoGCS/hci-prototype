@@ -22,7 +22,6 @@ var anzeigen = [
     }
 ]
 
-
 var result = null;
 
 function filter(filterAnzahl, filterModule, filterName ) {
@@ -42,9 +41,19 @@ function filter(filterAnzahl, filterModule, filterName ) {
     console.log(result)
 }
 
+var anzeigenBlock = '';
+var anzeige = null;
 
+for (var i = 0; i < result.length; i++) {
+    anzeige = result[i];
+    anzeigenBlock += '<div>' + 'Name:' + anzeige.name + '</div>';
+}
 
+function print(anzeigenBlock) {
+    document.getElementById('anzeigen').innerHTML = anzeigenBlock;
+}
 
+print(anzeigenBlock);
 
 
 
