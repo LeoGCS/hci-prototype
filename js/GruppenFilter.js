@@ -38,7 +38,7 @@ function print() {
             url.searchParams.get('name'));
     }
     for (let anzeige of result) {
-        anzeigenBlock += '<div>' + 'Name: ' + anzeige.name + '<br/> Modul:' + anzeige.module + '<br/> Max. Mitglieder Anzahl' + anzeige.maxAnzahl + '</div>';
+        anzeigenBlock += '<div>' + 'Name: ' + anzeige.name + '<br/> Modul: ' + anzeige.module + '<br/> Max. Mitglieder Anzahl: ' + anzeige.maxAnzahl + '</div>';
     }
     document.getElementById('anzeigen').innerHTML = anzeigenBlock;
 }
