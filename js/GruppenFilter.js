@@ -41,11 +41,9 @@ function filter(filterAnzahl, filterModule, filterName ) {
     console.log(result)
 }
 
-var anzeigenBlock = '';
-var anzeige = null;
-
-
-function print(anzeigenBlock) {
+function print() {
+    var anzeige = null;
+    var anzeigenBlock = '';
     if (result == null) {
         for (var i = 0; i < anzeigen.length; i++) {
             anzeige = anzeigen[i];
@@ -60,7 +58,6 @@ function print(anzeigenBlock) {
     document.getElementById('anzeigen').innerHTML = anzeigenBlock;
 }
 
-print(anzeigenBlock);
 
 
 
