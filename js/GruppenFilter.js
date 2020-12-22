@@ -47,15 +47,16 @@ function print() {
     if (result == null) {
         for (var i = 0; i < anzeigen.length; i++) {
             anzeige = anzeigen[i];
-            anzeigenBlock += '<div>' + 'Name:' + anzeige.name + '</div>';
+            anzeigenBlock += '<div>' + 'Name: ' + anzeige.name + '</div>';
         }
     } else {
         for (var i = 0; i < result.length; i++) {
             anzeige = result[i];
-            anzeigenBlock += '<div>' + 'Name:' + anzeige.name + '</div>';
+            anzeigenBlock += '<div>' + 'Name: ' + anzeige.name + '</div>';
         }
     }
     document.getElementById('anzeigen').innerHTML = anzeigenBlock;
+    console.log(anzeigenBlock);
 }
 
 
