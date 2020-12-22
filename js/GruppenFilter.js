@@ -55,8 +55,8 @@ function print() {
             anzeigenBlock += '<div>' + 'Name: ' + anzeige.name + '</div>';
         }
     }
-    document.getElementById('anzeigen').innerHTML = anzeigenBlock;
     console.log(anzeigenBlock);
+    document.getElementById('anzeigen').innerHTML = anzeigenBlock;
 }
 
 
