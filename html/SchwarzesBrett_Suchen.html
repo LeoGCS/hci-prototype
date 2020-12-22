@@ -47,15 +47,7 @@
                 <br><br>
             </form>
             <label for="name">Maximale Personenanzahl:</label>
-            <form action="/action_page.php">
-                <select id="maxAnzahl">
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                <br><br>
-            </form>
+            <input type="number" name="maxAnzahl" min="2" max="99">
         </div>
     </div>
     <div><button onclick="filter(document.getElementById('maxAnzahl').value, document.getElementById('module').value, document.getElementById('name').value);">Suchen!</button><br><br></div>

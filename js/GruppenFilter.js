@@ -22,9 +22,7 @@ var anzeigen = [
     }
 ]
 
-//var filterModule = document.getElementById("module") ;
 
-//var filterAnzahl = document.getElementById("maxAnzahl") ;
 var result = null;
 
 function filter(filterAnzahl, filterModule, filterName ) {
