@@ -96,3 +96,50 @@ a.active {
     background-color: #8db3ff;
     margin: 1rem;
 }
+.calendar_link {
+	font-family: "Lucida Sans", sans-serif;
+	font-size: 120px;
+	text-align: center;
+	color: #2e61a5;
+	text-decoration: none;
+    text-underline: none;
+    align-self: stretch;
+}
+
+.calendar_head {
+	font-family: "Lucida Sans", sans-serif;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: center;
+    width: 120px;
+    align-self: stretch;
+}
+
+.calendar_head_month {
+	font-family: "Lucida Sans", sans-serif;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: center;
+	width: 120px;
+	background-color: #2F4C8C;
+    color: #FFFFFF;
+    align-self: stretch;
+}
+
+.calendar_day {
+	font-family: "Lucida Sans", sans-serif;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: center;
+	width: 120px;
+	color: #9acdf6;
+    background-color: #0c1d42;
+    align-self: stretch;
+}
+
+.calendar_entry {
+	font-family: "Lucida Sans", sans-serif;
+	font-size: 60px;
+    text-align: center;
+    align-self: stretch;
+}
